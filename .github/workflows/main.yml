@@ -104,10 +104,3 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_TD: ${{ secrets.API_URL_TD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
-
-    - name: Run Penyedia Terumumkan Tahun Lama Node.js script
-      run: node Penyedia_Terumumkan_TahunLama.js
-      env:
-        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
-        API_URL_TD: ${{ secrets.API_URL_PEN }}
-        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
