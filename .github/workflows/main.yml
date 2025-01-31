@@ -104,3 +104,17 @@ jobs:
         GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
         API_URL_TD: ${{ secrets.API_URL_TD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+
+     - name: Run Penyedia Terumumkan Tahun Baru.js script
+      run: node Penyedia_Terumumkan_TahunBaru.js
+      env:
+        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
+        API_URL_TD: ${{ secrets.API_URL_PTTB }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        
+     - name: Run Penyedia Terumumkan Tahun Lama.js script
+      run: node Penyedia_Terumumkan_TahunLama.js
+      env:
+        GOOGLE_SHEET_KEY_JSON: ${{ secrets.GOOGLE_SHEET_KEY_JSON }}
+        API_URL_TD: ${{ secrets.API_URL_PTTL }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
