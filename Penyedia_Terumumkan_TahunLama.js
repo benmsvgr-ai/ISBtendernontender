@@ -12,12 +12,12 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: 'v4', auth });
 
 // URL to fetch data from
-const url = process.env.API_URL_PEN; // Use environment variable for URL
+const url = process.env.API_URL_JTT; // Use environment variable for URL
 
 // Define the spreadsheet ID and range
 const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable for Spreadsheet ID
-const clearRange = 'Penyedia2024!A:ZZ'; // Range to clear
-const updateRange = 'Penyedia2024!A1'; // Range to update
+const clearRange = 'JT-Tender!A:ZZ'; // Range to clear
+const updateRange = 'JT-Tender!A1'; // Range to update
 
 async function fetchData() {
     try {
