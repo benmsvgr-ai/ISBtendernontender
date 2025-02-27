@@ -12,12 +12,12 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: 'v4', auth });
 
 // URL to fetch data from
-const url = process.env.API_URL_PPENTEN; // Use environment variable for URL
+const url = process.env.API_URL_PPENTEN2024; // Use environment variable for URL
 
 // Define the spreadsheet ID and range
 const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable for Spreadsheet ID
-const clearRange = 'P-PenTender!A:ZZ'; // Range to clear
-const updateRange = 'P-PenTender!A1'; // Range to update
+const clearRange = 'P-PenTender2024!A:ZZ'; // Range to clear
+const updateRange = 'P-PenTender2024!A1'; // Range to update
 
 async function fetchData() {
     try {
