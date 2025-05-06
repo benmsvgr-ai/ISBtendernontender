@@ -16,8 +16,8 @@ const url = process.env.API_URL_PENLM; // Use environment variable for URL
 
 // Define the spreadsheet ID and range
 const spreadsheetId = process.env.SPREADSHEET_ID; // Use environment variable for Spreadsheet ID
-const clearRange = 'JT-Tender!A:ZZ'; // Range to clear
-const updateRange = 'JT-Tender!A1'; // Range to update
+const clearRange = 'SELESAI-NonT2024!A:ZZ'; // Range to clear
+const updateRange = 'SELESAI-NonT2024!A1'; // Range to update
 
 async function fetchData() {
     try {
